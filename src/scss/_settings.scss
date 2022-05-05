@@ -82,6 +82,10 @@ a {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
+
+  @include mobile{
+    padding: 0 15px;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -104,4 +108,28 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6{
+  margin: 0;
+  padding: 0;
+}
+.h1{
+  @include adaptiveValue('font-size', 60, 40, $keepSize: 1);
+}
+.h2{
+  @include adaptiveValue('font-size', 45, 30, $keepSize: 1);
+}
+.h3{
+  @include adaptiveValue('font-size', 20, 16, $keepSize: 1);
+}
+.h4{
+  @include adaptiveValue('font-size', 16, 14, $keepSize: 1);
+}
+.h5{
+  @include adaptiveValue('font-size', 14, 12, $keepSize: 1);
+}
+.h6{
+  font-size: rem(12);
 }
