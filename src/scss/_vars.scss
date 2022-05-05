@@ -1,0 +1,16 @@
+$minWidth: 320;
+$maxWidth: 1440;
+$maxWidthContainer: 1161;
+$containerPadding: 30;
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+:root {
+  // base
+  --font-family: "Open Sans", sans-serif;
+  --content-width: 1161px;
+  --container-offset: 30px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+}
