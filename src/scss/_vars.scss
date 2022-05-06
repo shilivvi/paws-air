@@ -18,6 +18,7 @@ $containerWidth: $maxWidthContainer + $containerPadding;
   --aqua: #40FFF2;
   --dodger-blue-2: #1F81F2;
 
+  --black: #000;
   --black-pearl: #071D36;
   --shark: #1B1D21;
   --oslo-gray: #8D8E90;
@@ -27,4 +28,8 @@ $containerWidth: $maxWidthContainer + $containerPadding;
   --bridal-heath: #FFFBF4;
   --cosmos: #FFD8D8;
   --chablis: #FFF5F5;
+
+  --error-text: #F93232;
+
+  --border-radius: 10px;
 }
