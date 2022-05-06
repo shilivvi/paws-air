@@ -116,26 +116,32 @@ a {
   padding: 0;
 }
 .h1{
+  font-family: 'Signika', sans-serif;
   @include adaptiveValue('font-size', 60, 40, $keepSize: 1);
   font-weight: 700;
 }
 .h2{
+  font-family: 'Signika', sans-serif;
   @include adaptiveValue('font-size', 45, 30, $keepSize: 1);
   font-weight: 600;
 }
 .h3{
+  font-family: 'OpenSans', sans-serif;
   @include adaptiveValue('font-size', 20, 16, $keepSize: 1);
   font-weight: 600;
 }
 .h4{
+  font-family: 'OpenSans', sans-serif;
   @include adaptiveValue('font-size', 16, 14, $keepSize: 1);
   font-weight: 400;
 }
 .h5{
+  font-family: 'OpenSans', sans-serif;
   @include adaptiveValue('font-size', 14, 12, $keepSize: 1);
   font-weight: 700;
 }
 .h6{
+  font-family: 'OpenSans', sans-serif;
   font-size: rem(12);
   font-weight: 400;
 }
@@ -147,7 +153,7 @@ a {
   padding: 16px 26px;
 
   font-weight: 700;
-  font-size: rem(18);
+  @include adaptiveValue('font-size', 18, 14, $keepSize: 1);
   line-height: percent(25, 18);
   color: var(--shark);
 

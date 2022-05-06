@@ -30,6 +30,7 @@
       left: 0;
       width: 100%;
       height: 100%;
+      z-index: 500;
 
       background-color: var(--black-pearl);
 
@@ -121,6 +122,9 @@
     @include for-desktop{
       display: none;
     }
+
+    position: relative;
+    z-index: 1000;
   }
 }
 

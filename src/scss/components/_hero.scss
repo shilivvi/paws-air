@@ -6,11 +6,20 @@
 
   position: relative;
 
+  @include small-tablet{
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
   // .hero__container
 
   &__container {
     display: flex;
     justify-content: space-between;
+
+    @include small-tablet{
+      flex-direction: column;
+    }
   }
 
   // .hero__title
@@ -27,8 +36,15 @@
     border-radius: var(--border-radius);
     padding: 15px 25px 25px 25px;
 
+    margin-left: 15px;
+
     position: relative;
     z-index: 2;
+
+    @include small-tablet{
+      margin: 0 auto;
+      margin-top: 32px;
+    }
   }
 
   // .hero__img
@@ -36,14 +52,24 @@
   &__img {
     max-width: 1340px;
     width: 100%;
-    border-radius: var(--border-radius);
     overflow: hidden;
 
     position: absolute;
     z-index: 1;
     top: 312px;
+    @include adaptiveValue('top', 312, 425, $widthTo: 768, $keepSize: 1);
     left: 50%;
     transform: translateX(-50%);
+
+    @include small-tablet{
+      position: unset;
+      transform: unset;
+      margin-top: -20px;
+    }
+
+    & img{
+      border-radius: var(--border-radius);
+    }
   }
 }
 
@@ -103,7 +129,7 @@
     margin-top: 7px;
     width: 100%;
 
-    font-size: rem(16);
+    @include adaptiveValue('font-size', 16, 14, $keepSize: 1);
     line-height: percent(22, 16);
     font-weight: 400;
     color: var(--shark);
