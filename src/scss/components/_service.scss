@@ -1,0 +1,270 @@
+.service {
+
+  padding-top: 38px;
+  padding-bottom: 50px;
+
+  // .service__container
+
+  &__container {
+    position: relative;
+  }
+
+  // .service__title
+
+  &__title {
+
+    color: var(--shark);
+
+    & span{
+      color: var(--dodger-blue-2);
+    }
+
+  }
+
+  // .service__aircraft
+
+  &__aircraft {
+    margin-top: 37px;
+    margin-bottom: 48px;
+
+    display: grid;
+    grid-template-columns: 404px 1fr;
+    column-gap: 30px;
+
+    @media(max-width: 1210px){
+      grid-template-columns: 1fr;
+    }
+
+    @include small-tablet{
+      margin-bottom: 0;
+    }
+  }
+
+  // .service__table
+
+  &__table {
+    border: 1px solid var(--shark);
+    border-radius: var(--border-radius);
+    padding: 20px 15px;
+  }
+
+  // .service__name
+
+  &__name {
+    color: var(--shark);
+  }
+
+  // .service__list
+
+  &__list {
+    margin-top: 6px;
+  }
+
+  // .service__list-item
+
+  &__list-item {
+    color: var(--shark);
+
+    &:not(:first-child){
+      margin-top: 6px;
+    }
+  }
+
+  // .service__carousel
+
+  &__carousel {
+  }
+
+  // .service__row
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+
+    @include tablet{
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+    }
+
+    &:not(:first-child){
+      margin-top: 50px;
+
+      @include small-tablet{
+        margin-top: 30px;
+      }
+    }
+
+    &--second{
+      display: flex;
+      align-items: center;
+
+      @include tablet{
+        flex-direction: column;
+        row-gap: unset;
+
+        & .service__text{
+          text-align: center;
+        }
+      }
+
+      & .service__col:first-child{
+        margin-right: 30px;
+
+        @include tablet{
+          margin: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &--block{
+      background-color: var(--dodger-blue-2);
+      padding: 32px 15px;
+      border-radius: 15px;
+      column-gap: 30px;
+      row-gap: 25px;
+    }
+  }
+
+  // .service__col
+
+  &__col {
+  }
+
+  // .service__content
+
+  &__content {
+    display: flex;
+  }
+
+  // .service__arrow
+
+  &__arrow {
+    margin-right: 13px;
+
+    height: 56px;
+    width: 56px;
+    border: 1px solid var(--shark);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    .service__content--light &{
+      border-color: var(--light-color);
+    }
+
+    @include mobile{
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  // .service__svg
+
+  &__svg {
+    width: 12px;
+    height: 12px;
+    fill: var(--shark);
+    
+    transform: rotate(180deg);
+
+    .service__content--light &{
+      fill: var(--light-color);
+    }
+  }
+
+  // .service__text
+
+  &__text {
+    color: var(--shark);
+    line-height: percent(24, 16);
+
+    .service__content--light &{
+      color: var(--light-color);
+    }
+  }
+
+  &__btn{
+    flex-shrink: 0;
+    width: 344px;
+
+    @include mobile{
+      width: calc(100vw - 30px);
+      min-width: 290px;
+    }
+  }
+}
+
+.aircraft-carousel {
+
+  // .aircraft-carousel__item
+
+  &__item {
+    overflow: hidden;
+  }
+
+  // .aircraft-carousel__img
+
+  &__img {
+    border-radius: var(--border-radius);
+    width: 100%;
+  }
+
+  &__controls{
+    position: absolute;
+    top: 0;
+    right: 30px;
+
+    @media(max-width: 1210px){
+      position: unset;
+      text-align: right;
+
+      margin: 30px 0;
+    }
+
+    @include small-tablet{
+      margin: 18px 0;
+    }
+  }
+
+  &__arrow{
+    width: 56px;
+    height: 56px;
+    border: 1px solid var(--shark);
+    border-radius: 50%;
+
+    &:disabled{
+      opacity: 0.5;
+    }
+
+    &--prev{
+      margin-right: 15px;
+
+      @include mobile{
+        margin-right: 10px;
+      }
+    }
+
+    &--next{
+      & .aircraft-carousel__svg{
+        transform: rotate(180deg);
+      }
+    }
+
+    @include mobile{
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  &__svg{
+    width: 12px;
+    height: 12px;
+    fill: var(--shark);
+  }
+
+}

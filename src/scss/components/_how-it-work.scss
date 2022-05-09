@@ -1,0 +1,131 @@
+.how-it-work {
+
+  background-color: var(--concrete);
+  padding-top: 38px;
+  padding-bottom: 50px;
+
+  // .how-it-work__container
+
+  &__container {
+  }
+
+  // .how-it-work__title
+
+  &__title {
+
+    color: var(--shark);
+    line-height: percent(56, 45);
+
+    & span{
+      color: var(--dodger-blue);
+    }
+
+  }
+
+  // .how-it-work__grid
+
+  &__grid {
+    margin-top: 37px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 20px;
+
+    @include small-tablet{
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      column-gap: unset;
+      row-gap: unset;
+    }
+  }
+
+  // .how-it-work__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(3){
+      //margin-top: -72px;
+    }
+
+    @include small-tablet{
+      &:not(:first-child){
+        margin-top: 20px;
+      }
+    }
+  }
+
+  // .how-it-work__top
+
+  &__top {
+    display: flex;
+  }
+
+  // .how-it-work__arrow
+
+  &__arrow {
+    width: 56px;
+    height: 56px;
+    border: 1px solid var(--shark);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+    margin-right: 13px;
+
+    @include mobile{
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  // .how-it-work__svg
+
+  &__svg {
+    width: 12px;
+    height: 12px;
+    fill: var(--shark);
+
+    transform: rotate(-90deg);
+  }
+
+  // .how-it-work__name
+
+  &__name {
+    background-color: var(--dodger-blue);
+    border-radius: var(--border-radius);
+    padding: 0 15px;
+    width: 100%;
+    
+    font-weight: 700;
+    
+    display: flex;
+    align-items: center;
+  }
+
+  // .how-it-work__bottom
+
+  &__bottom {
+    margin-top: 19px;
+
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 22px 15px;
+
+    @include small-tablet{
+      margin-top: 20px;
+    }
+  }
+
+  // .how-it-work__text
+
+  &__text {
+    color: var(--shark);
+    line-height: percent(24, 16);
+  }
+}
