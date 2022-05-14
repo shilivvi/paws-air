@@ -47,14 +47,30 @@
     flex-direction: column;
 
     &:nth-child(3){
-      //margin-top: -72px;
+      margin-top: -72px;
+
+      @media(max-width:879px){
+        margin-top: -69px;
+      }
+
+      @media(max-width:865px){
+        margin-top: -92px;
+      }
+
     }
+
+    &:nth-child(4){
+      @media(max-width:1109px){
+        margin-top: 23px;
+      }
+    }    
 
     @include small-tablet{
       &:not(:first-child){
         margin-top: 20px;
       }
     }
+    
   }
 
   // .how-it-work__top

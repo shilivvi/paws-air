@@ -1,0 +1,253 @@
+<section id="registr-form" class="registration-form">
+  <div class="registration-form__container container">
+    <h2 class="registration-form__title h2">Registration <span>Form</span></h2>
+    <div class="registration-form__content">
+      <form id="registration-form" action="/" class="registration-form__form">
+        <div class="registration-form__row registration-form__row--col4">
+          <div class="registration-form__col">
+            <label class="registration-form__label h5">
+              First Name*
+              <input type="text" name="first-name" class="registration-form__input input-reset" placeholder="Kate">
+            </label>
+          </div>
+          <div class="registration-form__col">
+            <label class="registration-form__label h5">
+              Last Name*
+              <input type="text" name="last-name" class="registration-form__input input-reset" placeholder="Johnson">
+            </label>
+          </div>
+          <div class="registration-form__col">
+            <label class="registration-form__label h5" data-datepicker data-end="100">
+              Date of birth (DD/MM/YYYY)*
+              <input type="text" class="registration-form__input input-reset" placeholder="10.05.1997">
+              <div class="registration-form__icon">
+                <svg class="registration-form__svg registration-form__svg--date">
+                  <use xlink:href="img/sprite.svg#date"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="registration-form__col">
+            <label class="registration-form__label h5">
+              Gender as per your passport*
+              <select name="position" class="registration-form__select">
+                <option value="" selected>Please select</option>
+                <option value="student">Male</option>
+                <option value="faculti">Female</option>
+              </select>
+              <div class="registration-form__icon">
+                <svg class="registration-form__svg registration-form__svg--arrow">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="registration-form__row registration-form__row--col3">
+          <div class="registration-form__col">
+            <label class="registration-form__label h5">
+              Passport Number*
+              <input type="text" name="house" class="registration-form__input input-reset" placeholder="CN135672">
+            </label>
+          </div>
+          <div class="registration-form__col">
+            <label class="registration-form__label h5" data-datepicker data-start="now">
+              Passport Expiry Date (DD/MM/YYYY)*
+              <input type="text" class="registration-form__input input-reset" placeholder="10.05.1997">
+              <div class="registration-form__icon">
+                <svg class="registration-form__svg registration-form__svg--date">
+                  <use xlink:href="img/sprite.svg#date"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="registration-form__col">
+            <label class="registration-form__label h5">
+              Country of issue*
+              <input type="text" name="house" class="registration-form__input input-reset" placeholder="CN135672">
+            </label>
+          </div>
+        </div>
+
+        <div class="registration-form__row registration-form__row--col2">
+          <div class="registration-form__col">
+            <label class="registration-form__label h5">
+              Contact number*
+              <input type="text" name="city" class="registration-form__input input-reset" placeholder="Montreal, Qc">
+            </label>
+          </div>
+          <div class="registration-form__col">
+            <label class="registration-form__label h5">
+              Email*
+              <input type="text" name="state" class="registration-form__input input-reset" placeholder="H3T 7N8">
+            </label>
+          </div>
+        </div>
+
+        <div class="registration-form__row registration-form__row--col3">
+          <div class="registration-form__col">
+            <label class="registration-form__label h5">
+              House/building number*
+              <input type="email" name="email" class="registration-form__input input-reset" placeholder="address@yahoo.com">
+            </label>
+          </div>
+          <div class="registration-form__col">
+            <label class="registration-form__label h5">
+              Unit
+              <input type="number" name="phone" class="registration-form__input input-reset" placeholder="1 250 360 0814">
+            </label>
+          </div>
+          <div class="registration-form__col">
+            <label class="registration-form__label h5">
+              Street Name*
+              <input type="number" name="phone" class="registration-form__input input-reset" placeholder="1 250 360 0814">
+            </label>
+          </div>
+        </div>
+
+        <div class="registration-form__row registration-form__row--col3">
+          <div class="registration-form__col">
+            <label class="registration-form__label h5">
+              City*
+              <input type="email" name="email" class="registration-form__input input-reset" placeholder="address@yahoo.com">
+            </label>
+          </div>
+          <div class="registration-form__col">
+            <label class="registration-form__label h5">
+              State/Province
+              <input type="number" name="phone" class="registration-form__input input-reset" placeholder="1 250 360 0814">
+            </label>
+          </div>
+          <div class="registration-form__col">
+            <label class="registration-form__label h5">
+              Postal Code*
+              <input type="number" name="phone" class="registration-form__input input-reset" placeholder="1 250 360 0814">
+            </label>
+          </div>
+        </div>
+
+        <div class="registration-form__row registration-form__row--col3">
+          <div class="registration-form__col">
+            <label class="registration-form__label h5">
+              How many pets will travel with you?*
+              <select id="pets-select" name="amount" class="registration-form__select">
+                <option value="0">0</option>
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+              <div class="registration-form__icon">
+                <svg class="registration-form__svg registration-form__svg--arrow">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div id="pets-section" class="registration-form__row registration-form__row--pets">
+
+          <div class="registration-form__col registration-form__col--name">
+            <label class="registration-form__label h5">
+              Your pet’s name*
+              <input type="text" name="pet-name-1" class="registration-form__input input-reset" placeholder="Koopper">
+            </label>
+          </div>
+
+          <div class="registration-form__col registration-form__col--name">
+            <label class="registration-form__label h5">
+              Your pet’s name*
+              <input type="text" name="pet-name-1" class="registration-form__input input-reset" placeholder="Milo">
+            </label>
+          </div>
+
+          <div class="registration-form__col registration-form__col--name">
+            <label class="registration-form__label h5">
+              Your pet’s name*
+              <input type="text" name="pet-name-1" class="registration-form__input input-reset" placeholder="Charlie">
+            </label>
+          </div>
+
+          <div class="registration-form__col registration-form__col--name">
+            <label class="registration-form__label h5">
+              Your pet’s name*
+              <input type="text" name="pet-name-1" class="registration-form__input input-reset" placeholder="Finn">
+            </label>
+          </div>
+
+          <div class="registration-form__col registration-form__col--weight">
+            <label class="registration-form__label h5">
+              Pet’s weight*
+              <input type="text" name="pet-weight-1" class="registration-form__input input-reset" placeholder="3">
+            </label>
+          </div>
+
+          <div class="registration-form__col registration-form__col--weight">
+            <label class="registration-form__label h5">
+              Pet’s weight*
+              <input type="text" name="pet-weight-1" class="registration-form__input input-reset" placeholder="5">
+            </label>
+          </div>
+
+          <div class="registration-form__col registration-form__col--weight">
+            <label class="registration-form__label h5">
+              Pet’s weight*
+              <input type="text" name="pet-weight-1" class="registration-form__input input-reset" placeholder="4">
+            </label>
+          </div>
+
+          <div class="registration-form__col registration-form__col--weight">
+            <label class="registration-form__label h5">
+              Pet’s weight*
+              <input type="text" name="pet-weight-1" class="registration-form__input input-reset" placeholder="3">
+            </label>
+          </div>
+
+        </div>
+
+        <div class="registration-form__row registration-form__row--second">
+          <div class="registration-form__col">
+            <label class="registration-form__label registration-form__label--checkbox h5">
+              <input type="checkbox" name="privacy-policy" class="visually-hidden">
+              <span class="registration-form__checkbox"></span>
+              I have read and agree to the privacy policy
+            </label>
+          </div>
+        </div>
+        <div class="registration-form__row registration-form__row--second">
+          <div class="registration-form__col">
+            <label class="registration-form__label registration-form__label--checkbox h5">
+              <input type="checkbox" name="receive-emails" class="visually-hidden">
+              <span class="registration-form__checkbox"></span>
+              Yes, I would like to receive emails with exclusive updates and information
+            </label>
+          </div>
+        </div>
+        <div class="registration-form__action">
+          <button class="registration-form__btn btn btn-reset">Send now</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <template id="pet-name">
+    <div class="registration-form__col registration-form__col--name">
+      <label class="registration-form__label h5">
+        Your pet’s name*
+        <input type="text" class="registration-form__input input-reset">
+      </label>
+    </div>
+  </template>
+
+  <template id="pet-weight">
+    <div class="registration-form__col registration-form__col--weight">
+      <label class="registration-form__label h5">
+        Pet’s weight*
+        <input type="text" class="registration-form__input input-reset">
+      </label>
+    </div>
+  </template>
+
+</section>

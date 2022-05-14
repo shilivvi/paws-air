@@ -172,3 +172,46 @@ a {
   }
 
 }
+
+/* CF7 */
+.wpcf7 .screen-reader-response {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  word-wrap: normal !important;
+}
+
+.wpcf7 .wpcf7-form.invalid .wpcf7-response-output,
+.wpcf7 .wpcf7-form.failed .wpcf7-response-output{
+  margin-top: 15px;
+  border: 2px solid #fff;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  color: var(--shark);
+  font-size: rem(14);
+  text-align: center;
+  border-color: var(--cosmos); 
+  background-color: var(--chablis);
+}
+
+.wpcf7 .wpcf7-form.sent .wpcf7-response-output{
+  margin-top: 15px;
+  border: 2px solid #fff;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  color: var(--shark);
+  font-size: rem(14);
+  text-align: center;
+  background-color: rgb(0 255 0 / 20%);
+  border-color: var(--dodger-blue);
+}
+
+.privacy-policy{
+  @include adaptiveValue('font-size', 16, 14, $keepSize: 1);
+}

@@ -1,5 +1,9 @@
-import './components/form-validate.js';
 import './components/lazy-load.js'
 import './components/slider.js'
 import './components/dropdown.js'
 import './components/accordion.js'
+import './components/datepicker.js'
+import './components/animation-scroll.js'
+import './components/fix-header.js'
+import './components/pets-select.js'
+//import './components/active-header-link.js'

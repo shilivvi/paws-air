@@ -1,0 +1,38 @@
+@import '../../../node_modules/vanillajs-datepicker/sass/mixins';
+
+@mixin dp-button {
+  .button {
+    
+    .datepicker-header & {
+      @include dp-header-button-common;
+
+      background-color: transparent;
+
+      &.view-switch{
+        font-size: rem(15);
+      }
+
+    }
+
+    .datepicker-footer & {
+      @include dp-footer-button-common;
+
+    }
+  }
+}
+
+@import '../../../node_modules/vanillajs-datepicker/sass/datepicker';
+
+
+.datepicker-header .datepicker-controls{
+  padding: 16px 16px 12px 16px;
+}
+
+.datepicker-cell.focused.selected {
+  background-color: var(--dodger-blue);
+  color: var(--light-color);
+}
+
+.datepicker-picker{
+  border-radius: var(--border-radius);
+}

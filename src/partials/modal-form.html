@@ -1,0 +1,53 @@
+<div class="graph-modal modal-form">
+  <div class="graph-modal__container modal-form__container" role="dialog" aria-modal="true" data-graph-target="call-back">
+    <button class="btn-reset js-modal-close graph-modal__close modal-form__close" aria-label="Close">
+      <div class="modal-form__icon">
+        <svg class="modal-form__svg">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+    </button>
+    <div class="graph-modal__content modal-form__content">
+      <h2 class="modal-form__title h3">Order a call back</h2>
+      <form action="/" class="modal-form__form">
+        <div class="modal-form__row">
+          <label class="modal-form__label h5">
+            Name*
+            <input type="text" name="name" class="modal-form__input input-reset" placeholder="Kate">
+          </label>
+        </div>
+        <div class="modal-form__row">
+          <label class="modal-form__label h5">
+            Contact number*
+            <input type="number" name="phone" class="modal-form__input input-reset" placeholder="1 250 360 0814">
+          </label>
+        </div>
+        <div class="modal-form__row">
+          <label class="modal-form__label h5">
+            Email*
+            <input type="email" name="email" class="modal-form__input input-reset" placeholder="address@yahoo.com">
+          </label>
+        </div>
+        <div class="modal-form__row">
+          <label class="modal-form__label modal-form__label--checkbox h5">
+            <input type="checkbox" name="privacy-policy" class="modal-form__input modal-form__input--checkbox visually-hidden">
+            <span class="modal-form__checkbox"></span>
+            I have read and agree to the privacy policy
+          </label>
+        </div>
+        <div class="modal-form__row">
+          <label class="modal-form__label modal-form__label--checkbox h5">
+            <input type="checkbox" name="receive-emails" class="modal-form__input modal-form__input--checkbox visually-hidden">
+            <span class="modal-form__checkbox"></span>
+            Yes, I would like to receive emails with exclusive updates and information
+          </label>
+        </div>
+        <div class="modal-form__row">
+          <div class="modal-form__actions">
+            <button type="submit" class="modal-form__btn btn btn-reset">Call Back</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

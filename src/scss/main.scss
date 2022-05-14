@@ -7,6 +7,8 @@
 @import "settings";
 
 // подключения компонентов страницы
+@import "../../node_modules/graph-modal/dist/graph-modal.min";
+@import "./vendor/tiny-slider";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/about-us";
@@ -17,3 +19,7 @@
 @import "./components/customer";
 @import "./components/contact-us";
 @import "./components/faq";
+@import "./components/modal-form";
+@import "./components/registration-form";
+@import "./components/datepicker";
+@import "./components/footer";
